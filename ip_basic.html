@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Basic</title>
+</head>
+<body>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rklidcZ-aLU?si=xF1TwAzCPsb5qcJj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <form>
+        <label for="date">Date:</label>
+        <input type="date" id="date"> <br>
+
+        <label for="color">Color:</label>
+        <input type="color" id="color"><br>
+
+        <label for="range">Range:</label>
+        <input type="range" id="range"><br>
+
+        <label for="file">File:</label>
+        <input type="file" id="file"> <br>
+
+        <label>Button:</label>
+        <input type="button" value="Click me"> <br>
+
+        <label>Submit:</label>
+        <input type="submit"> <br>
+
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+
+        <label for="other">Other</label>
+        <input type="radio" id="other" name="gender" value="other"> <br><br>
+
+        <table>
+            <caption><b>Languages you know</b></caption>
+            <tr>
+                <td><label for="C">C</label></td>
+                <td><input type="checkbox" id="C" name="Language" value="C"></td>
+            </tr>
+            <tr>
+                <td><label for="Cpp">Cpp</label></td>
+                <td><input type="checkbox" id="Cpp" name="Language" value="Cpp"></td>
+            </tr>
+            <tr>
+                <td><label for="Python">Python</label></td>
+                <td><input type="checkbox" id="Python" name="Language" value="Python"></td>
+            </tr>
+            <tr>
+                <td><label for="Java">Java</label></td>
+                <td><input type="checkbox" id="Java" name="Language" value="Java"></td>
+            </tr>
+        </table>
+
+        <label for="Country">Select yor Country :</label>
+        <select name="Country" id="Country">
+            <option value="India">India</option>
+            <option value="US">US</option>
+            <option value="UK">UK</option>
+            <option value="Other">Other</option>
+        </select>
+        <br>
+
+        <textarea name="feedback" id="feedback"
+        rows="4" cols="40">
+            Please Enter your Feedback
+        </textarea>
+    </form>
+</body>
+</html>
