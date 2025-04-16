@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        *{
+            color :rgb(255, 8, 8); 
+            /*Universal selector*/
+        }
+        h1, h2{
+            color :chartreuse;
+            /*multiple selector*/
+        }
+        #para_1{
+            color:blueviolet;
+            /*#id selector*/
+        }
+
+        .paragrapg{
+            color :chocolate;
+            /*class selector*/
+        }
+        #para_1, .paragrapg{
+            color:rgb(255, 147, 6);
+            /*multiple selector*/
+        }
+    </style>
+</head>
+<body>
+    <h1>This is heading 1</h1>
+
+    <h2>This is heading 2</h2>
+
+    <p id="para_1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, nobis in perspiciatis ullam deleniti nesciunt totam, non laborum placeat, quod perferendis sed dolorem corporis suscipit qui dolor aspernatur facere veritatis!</p>
+    <br>
+
+    <div id="decendent_selector">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi natus aliquam sed eius laborum! Ratione nam magni fugiat et officia. Neque tempora, sunt minima est fugiat corrupti dignissimos quia molestiae.</p>
+    </div>
+
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloribus suscipit animi, officiis, ipsam rem laboriosam facilis tenetur id nihil exercitationem repellendus quod? Error repellat illum, quidem voluptatum neque totam?</p>
+
+</body>
+</html>

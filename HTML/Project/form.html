@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- Declares the document type and version (HTML5 here) -->
+<html> <!-- The root element of the HTML document -->
+<head> <!-- Contains meta-information about the HTML document -->
+    <title>Miscellaneous Fee Payment</title> <!-- Title displayed on the browser's tab -->
+    <style>
+        /* CSS styles go here */
+    </style>
+</head>
+<body> <!-- The body of the document, where content is displayed -->
+
+    <h2>Miscellaneous Fee Payment</h2> <!-- Main heading of the page -->
+
+    <!-- Form to gather information for fee payment -->
+    <form>
+        <table border="1"> <!-- A table to organize the form fields neatly -->
+            <tr> <!-- Row for the first input -->
+                <td> <!-- Table cell for the label -->
+                    <label for="applicationNo">Enter Application No/Roll No/Temporary Registration No</label><br> <!-- Label for the input field -->
+                    <span class="note">(Those who are applying for Ph.D. enter Mobile No.)</span> <!-- Additional note for users -->
+                </td>
+                <td><input type="text" id="applicationNo" name="applicationNo"></td> <!-- Input field for Application No or similar -->
+                <td class="buttons">
+                    <button type="button">Search Details (Optional)</button> <!-- Button to search for details -->
+                    <button type="button">Download</button> <!-- Button to download something -->
+                </td>
+            </tr>
+            <tr>
+                <td><label for="candidateName">Candidate Name</label></td>
+                <td colspan="2"><input type="text" id="candidateName" name="candidateName"></td> <!-- Input field for Candidate's name -->
+            </tr>
+            <tr>
+                <td><label for="programmes">Programmes</label></td>
+                <td colspan="2"><input type="text" id="programmes" name="programmes"></td> <!-- Input field for Programme information -->
+            </tr>
+            <tr>
+                <td><label for="year">Year</label></td>
+                <td colspan="2"><input type="text" id="year" name="year"></td> <!-- Input field for the Year -->
+            </tr>
+            <tr>
+                <td><label for="mobileNo">Mobile No</label></td>
+                <td colspan="2"><input type="text" id="mobileNo" name="mobileNo"></td> <!-- Input field for Mobile number -->
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td colspan="2"><input type="email" id="email" name="email"></td> <!-- Input field for Email address -->
+            </tr>
+            <tr>
+                <td><label for="feeType">Fee Type</label></td>
+                <td colspan="2">
+                    <select id="feeType" name="feeType"> <!-- Dropdown to select the fee type -->
+                        <option value="">-- Select Type --</option> <!-- Placeholder option -->
+                        <option value="admission">Admission</option> <!-- Option for Admission fee -->
+                        <option value="exam">Exam</option> <!-- Option for Exam fee -->
+                        <option value="hostel">Hostel</option> <!-- Option for Hostel fee -->
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="amount">Amount</label></td>
+                <td colspan="2"><input type="text" id="amount" name="amount" readonly></td> <!-- Readonly field for displaying the amount -->
+            </tr>
+            <tr>
+                <td><label for="platformCharges">Platform Charges</label></td>
+                <td colspan="2"><input type="text" id="platformCharges" name="platformCharges" readonly></td> <!-- Readonly field for platform charges -->
+            </tr>
+            <tr>
+                <td><label for="totalFee">Total Fee</label></td>
+                <td colspan="2"><input type="text" id="totalFee" name="totalFee" readonly></td> <!-- Readonly field for displaying total fee -->
+            </tr>
+            <tr>
+                <td><label for="remarks">Remarks</label></td>
+                <td colspan="2"><textarea id="remarks" name="remarks" rows="2"></textarea></td> <!-- Textarea for user remarks -->
+            </tr>
+        </table>
+
+        <p> <!-- Paragraph containing declaration text -->
+            I hereby declare that I have read and understood the terms and conditions of eligibility for the programme for which I seek admission. 
+            To the best of my knowledge and belief, I also agree that once the fee is paid, it will not be refunded or adjusted for other purposes.
+        </p>
+
+        <label>
+            <input type="checkbox" required> I agree that the above information is correct
+        </label><br><br> <!-- Checkbox for user consent -->
+
+        <button type="submit">Submit</button> <!-- Submit button to send the form data -->
+    </form>
+
+</body>
+</html>
