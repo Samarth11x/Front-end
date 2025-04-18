@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font-Family</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <style>
+        /* #font_family_1 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #font_family_2 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        } */
+
+        /* Font family can be defined using multiple fonts. 
+           At runtime, if the browser doesn't find the first font, 
+           it will use the next defined font as a fallback. */
+
+         .font{
+                font-family: "Special Gothic Expanded One", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            /*externally defined font using link*/
+
+    </style>
+</head>
+<body>
+    <p id="font_family_1" class="font">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio praesentium perferendis ad, ipsam ab tenetur veniam molestiae quaerat quas, nemo at laboriosam, reprehenderit pariatur consectetur ut iure! Similique, sequi accusantium.
+    </p>
+    <br>
+    <p id="font_family_2" class="font">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio praesentium perferendis ad, ipsam ab tenetur veniam molestiae quaerat quas, nemo at laboriosam, reprehenderit pariatur consectetur ut iure! Similique, sequi accusantium.
+    </p>
+</body>
+</html>
