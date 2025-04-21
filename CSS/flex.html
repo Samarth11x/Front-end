@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <style>
+        #heading{
+            margin: 0px;
+            padding: 0px;
+            height: 100vh;
+            width: 100%;
+        }
+        .container{
+            height: 110px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+        }
+        .container_2{
+            position: relative;
+            top: 10%;
+            height: 150px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        #home{
+            height: 10px;
+            width: 40px;
+            margin: 20px;
+            padding: 20px;
+            background-color: aliceblue;
+        }
+        #about{
+            margin: 20px;
+            padding: 20px;
+            height: 10px;
+            width: 40px;
+            background-color: aliceblue;
+        }
+        #contact{
+            margin: 20px;
+            padding: 20px;
+            height: 10px;
+            width: 40px;
+            background-color: aliceblue;
+        }
+        #main {
+            margin: 20px;
+            padding: 20px;
+            height: 10px;
+            width: 40px;
+            background-color: aliceblue;
+            
+        }
+        .container nav a{
+            text-decoration: none;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="heading">
+        <div class="container">
+            <nav id="home"><a href="#">Home</a></nav>
+            <nav id="main"><a href="#">Main</a></nav>
+            <nav id="contact"><a href="#">About</a></nav>
+            <nav id="about"><a href="#">Contact</a></nav>
+        </div>
+    <div id="heading">
+        <div class="container_2">
+            <p class="box">Box1</p>
+            <p class="box">box2</p>
+            <p class="box">Box3</p>
+            <p class="box">Box4</p>
+        </div>
+    </div>
+</body>
+</html>
