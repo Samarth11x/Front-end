@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform CSS</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: lawngreen;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            display: inline-block;
+            transition: all 0.5s ease-in;
+        }
+        .box:hover{
+            display: inline-block;
+            transform: rotatex(360deg);
+        }
+        #box1{
+            margin: 10px;
+
+        }
+        #box1:hover{
+            transform: scale(2);
+        }
+        #box2{
+            margin: 10px;
+
+        }
+        #box2:hover{
+            transform: translate(100px);
+        }
+        #box3{
+            margin: 10px;
+
+        }
+        #box3:hover{
+            transform: skew(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">rotate</div>
+    <div id="box1" class="box">Scale</div>
+    <div id="box2" class="box">Translate</div>
+    <div id="box3" class="box">Translate</div>
+</body>
+</html>

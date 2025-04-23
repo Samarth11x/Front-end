@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: cornflowerblue;
+            border: 2px solid black;
+            position: relative;
+            top: 10px;
+            left: 10px;
+            border-radius: 5px;
+        }
+        #box1{
+            animation-name: rotate;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        #box2{
+            margin: 20px;
+            animation: awara 2s ease-in-out 1s infinite alternate;
+        }
+
+        @keyframes rotate{
+            from{
+            left: 10px;
+            }
+            to{
+            left:200px;
+            }
+        }
+        @keyframes awara{
+            0%{
+                left : 10px;
+            }
+            50%{
+                left : 50px;
+            }
+            100%{
+                left : 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">Animate</div>
+    <div id="box2" class="box">Animate2</div>
+</body>
+</html>
